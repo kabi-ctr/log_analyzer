@@ -1,0 +1,7 @@
+ssh_brute_force:
+  failed_attempts: 5
+  window_minutes: 10
+username_spraying:
+  unique_usernames: 4
+  window_minutes: 15
+
