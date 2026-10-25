@@ -1,5 +1,7 @@
 from datetime import timedelta
+
 import pandas as pd
+
 
 class ThreatDetector:
     def __init__(self, config: dict):

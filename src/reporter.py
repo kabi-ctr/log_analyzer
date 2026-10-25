@@ -1,8 +1,9 @@
 import pandas as pd
 
+
 def generate_firewall_rules(offending_ips: list[str], syntax: str = "nftables") -> str:
     rules = []
-    rules.append(f"# WARNING: Suggested rules only. Inspect before executing.\n")
+    rules.append("# WARNING: Suggested rules only. Inspect before executing.\n")
     for ip in offending_ips:
         if syntax == "iptables":
             rules.append(f"iptables -A INPUT -s {ip} -j DROP")
